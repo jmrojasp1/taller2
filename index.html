@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Series</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <style>
+    .series-container {
+      margin: 20px auto;
+      max-width: 1200px;
+      display: flex;
+    }
+    .series-table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .series-table th {
+      background-color: #f2f2f2;
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    .series-table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    .series-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .series-table tr:hover {
+      background-color: #e9e9e9;
+      cursor: pointer;
+    }
+    h2 {
+      border-top: 5px solid #ADD8E6;  
+      padding-top: 10px;
+    }
+    .card-container {
+      width: 40%;
+      margin-left: 20px;
+    }
+    .card-img-top {
+      max-height: 300px;
+      object-fit: cover;
+    }
+    #average {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="series-container">
+    <div class="table-container">
+      <h2>TV Series</h2>
+      <table class="series-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Channel</th>
+            <th>Seasons</th>
+          </tr>
+        </thead>
+        <tbody id="series"></tbody>
+      </table>
+      <div id="average"></div>
+    </div>
+   
+    <div class="card-container">
+        <div id="card" class="card" style="display: none;">
+          <img id="image" class="card-img-top" alt="Series Image">
+          <div class="card-body">
+            <h5 id="title" class="card-title"></h5>
+            <p id="description" class="card-text"></p>
+            <a id="url" href="#" class="btn btn-primary"></a>
+          </div>
+        </div>
+  </div>
+
+  <script type="module" src="./scripts/serie.js"></script>
+  <script type="module" src="./scripts/dataSeries.js"></script>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
