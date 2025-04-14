@@ -5,11 +5,10 @@ import { series } from "./dataseries";
 const seriesTableBody: HTMLElement = document.getElementById('series')!;
 const averageElement: HTMLElement = document.getElementById('average')!;
 const detailCard: HTMLElement = document.getElementById('card')!;
-const titleElement: HTMLElement = document.getElementById('series-title')!;
-const descriptionElement: HTMLElement = document.getElementById('series-description')!;
-const imageElement: HTMLImageElement = document.getElementById('series-image') as HTMLImageElement;
-const urlElement: HTMLAnchorElement = document.getElementById('series-url') as HTMLAnchorElement;
-
+const titleElement: HTMLElement = document.getElementById('title')!;
+const descriptionElement: HTMLElement = document.getElementById('description')!;
+const imageElement: HTMLImageElement = document.getElementById('image') as HTMLImageElement;
+const urlElement: HTMLAnchorElement = document.getElementById('url') as HTMLAnchorElement;
 // Renderizar tabla
 renderSeriesTable(series);
 
